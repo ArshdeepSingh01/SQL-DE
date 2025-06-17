@@ -109,7 +109,7 @@ https://www.geeksforgeeks.org/postgresql/postgresql-data-types/
 In PostgreSQL, the CREATE TABLE statement is used to define a new table within a database. It allows us to specify the table's structure, including column names, data types, and constraints, ensuring data integrity and consistency. 
 
 **Syntax**
-``` CREATE TABLE table_name (
+<pre> ```sql CREATE TABLE table_name (
     column_name TYPE column_constraint,
     table_constraint table_constraint
-) INHERITS existing_table_name;```
+) INHERITS existing_table_name;``` </pre>pre> `
