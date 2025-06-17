@@ -110,7 +110,7 @@ In PostgreSQL, the CREATE TABLE statement is used to define a new table within a
 
 **Syntax**
 
-```CREATE TABLE table_name (
+```sql CREATE TABLE table_name (
     column_name TYPE column_constraint,
     table_constraint table_constraint
 ) INHERITS existing_table_name;```
