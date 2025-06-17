@@ -112,4 +112,4 @@ In PostgreSQL, the CREATE TABLE statement is used to define a new table within a
 <pre> ```sql CREATE TABLE table_name (
     column_name TYPE column_constraint,
     table_constraint table_constraint
-) INHERITS existing_table_name;``` </pre>pre> `
+) INHERITS existing_table_name;``` </pre>
