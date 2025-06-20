@@ -114,3 +114,22 @@ CREATE TABLE table_name (
     column_name TYPE column_constraint,
     table_constraint table_constraint
 ) INHERITS existing_table_name;
+
+# Types of queries in SQL 
+
+DDL- Data Definition Language - **CREATE, ALTER, DROP**
+DML- Data Manipulation Language - **INSERT, UPDATE, DELETE, EXECUTE, EXPLAIN**
+DQL- Data Query Language - **SELECT**
+DCL- Data Control Language **GRANT, REVOKE**
+TCL- Transaction Control Language - **COMMIT, ROLLBACK, and SAVEPOINT**
+
+# Creating db
+
+CREATE DATABASE db_name
+ OWNER =  role_name
+ TEMPLATE = template
+ ENCODING = encoding
+ LC_COLLATE = collate
+ LC_CTYPE = ctype
+ TABLESPACE = tablespace_name
+ CONNECTION LIMIT = max_concurrent_connection
