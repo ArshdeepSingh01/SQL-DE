@@ -135,3 +135,55 @@ CREATE DATABASE db_name
  TABLESPACE = tablespace_name
  CONNECTION LIMIT = max_concurrent_connection
  ```
+
+ # Operators
+We can operate with different operators in the WHERE clause:
+ ## SQL Comparison & Logical Operators
+
+| Operator   | Description                                                        |
+|------------|--------------------------------------------------------------------|
+| `=`        | Equal to                                                           |
+| `<`        | Less than                                                          |
+| `>`        | Greater than                                                       |
+| `<=`       | Less than or equal to                                              |
+| `>=`       | Greater than or equal to                                           |
+| `<>`       | Not equal to                                                       |
+| `!=`       | Not equal to (alternative syntax)                                  |
+| `LIKE`     | Check if a value matches a pattern (case-sensitive)               |
+| `ILIKE`    | Check if a value matches a pattern (case-insensitive)             |
+| `AND`      | Logical AND                                                        |
+| `OR`       | Logical OR                                                         |
+| `IN`       | Check if a value exists in a list of values                        |
+| `BETWEEN`  | Check if a value is between a range of values                      |
+| `IS NULL`  | Check if a value is `NULL`                                         |
+| `NOT`      | Negates a condition (`NOT LIKE`, `NOT IN`, `NOT BETWEEN`, etc.)   |
+
+# Constraints
+Constraints are the rules enforced on data columns on table. These are used to prevent invalid data from being entered into the database. This ensures the accuracy and reliability of the data in the database.
+
+Constraints could be column level or table level. Column level constraints are applied only to one column whereas table level constraints are applied to the whole table. Defining a data type for a column is a constraint in itself. For example, a column of type DATE constrains the column to valid dates.
+
+The following are commonly used constraints available in PostgreSQL.
+
+### 🔒 NOT NULL Constraint
+Ensures that a column **cannot have NULL values**.
+
+### 🆔 UNIQUE Constraint
+Ensures that **all values in a column are different**.
+
+### 🔑 PRIMARY Key
+**Uniquely identifies** each row/record in a database table. A primary key column must contain unique, non-null values.
+
+### 🔗 FOREIGN Key
+**Establishes a link between tables** by enforcing a relationship between a column in one table and a column in another.
+
+### ✅ CHECK Constraint
+Ensures that all values in a column **satisfy certain conditions** defined in the constraint.
+
+### 🚫 EXCLUSION Constraint
+Ensures that if any two rows are compared on the specified column(s) or expression(s) using the specified operator(s), **not all of these comparisons will return TRUE**.
+
+---
+
+> 💡 Use these constraints to maintain accuracy, consistency, and reliability in your database.
+
