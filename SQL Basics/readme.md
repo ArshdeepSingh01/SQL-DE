@@ -187,3 +187,35 @@ Ensures that if any two rows are compared on the specified column(s) or expressi
 
 > 💡 Use these constraints to maintain accuracy, consistency, and reliability in your database.
 
+# Keys 
+Keys are used to identify the tuples(rows) uniquely in the table.
+We also use keys to set up relations amongst various columns and tables of a relational database. 
+Refer - https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/
+
+# ACID Properties
+A transaction is sequence of operations performed as single operation
+**Atomicity** - "All or nothing" If a transaction has multiple operations, and one of them fails, the whole transaction is rolled back, leaving the database unchanged. 
+**Consistency** - "Maintaining valid data states" A transaction should take database from only one valid state to another. If a transaction violates any database rules or constraints, it should be rejected, ensuring that only consistent data exists after the transaction.
+**Isolation** - "Ensuring Concurrent Transactions Don't Interfere" Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed.
+**Durability** - "Persisting changes". Changes which are once done are persisting to the database even if system fails.
+
+
+# Normalisation
+
+Normalization is a process in databases to organize data so that:
+
+There’s no repetition (no duplicate data),
+Data is stored efficiently, and
+It's easy to maintain and update the database without errors.
+
+1NF (First Normal Form): No repeating groups or arrays. Every column has atomic (single) values.
+
+2NF (Second Normal Form): No partial dependency — Must be in 1NF
+No partial dependency: All non-key columns must depend on the entire primary key, not just part of it.
+
+3NF (Third Normal Form): No transitive dependency — Must be in 2NF
+No transitive dependency: Non-key columns shouldn't depend on other non-key columns
+
+BCNF - Must be in 3NF
+Every determinant must be a candidate key
+(A determinant is any column that determines another column)
