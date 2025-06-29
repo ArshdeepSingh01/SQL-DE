@@ -217,5 +217,25 @@ No partial dependency: All non-key columns must depend on the entire primary key
 No transitive dependency: Non-key columns shouldn't depend on other non-key columns
 
 BCNF - Must be in 3NF
-Every determinant must be a candidate key
+Every determinant must be a** candidate key
 (A determinant is any column that determines another column)
+
+# Insert, update, and delete
+**INSERT**
+To insert data into a table in PostgreSQL, we use the INSERT INTO statement. To only add specific values and ignoring other columns you need to mention column name in the command otherwise it will throw error.
+**UPDATE**
+Update is used to update already created rows and it is used with SET keyword for setting specific column.
+**ALTER**
+Alter is used to alter the column type, add/drop specific columns or renaming columns.
+**DROP**
+Drop is used to drop table
+**DELETE**
+Delete is used to delete rows and we have to specify the conditions if we want only few rows to be deleted.
+*Use DELETE when:*
+You need to fire triggers
+You want to conditionally delete rows
+You want the option to rollback (and you're not in MySQL)
+*Use TRUNCATE when:*
+You want a faster, clean wipe
+You don’t need to log each deletion
+You’re okay with auto-increment reset
