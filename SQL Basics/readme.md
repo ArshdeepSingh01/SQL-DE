@@ -239,3 +239,32 @@ You want the option to rollback (and you're not in MySQL)
 You want a faster, clean wipe
 You don’t need to log each deletion
 You’re okay with auto-increment reset
+
+# Joins
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+**Inner-Join**
+The INNER JOIN keyword selects records that have matching values in both tables.
+**Left-Join**
+The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2). The result is 0 records from the right side, if there is no match.
+**Right-Join**
+The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). The result is 0 records from the left side, if there is no match.
+**Full-outer-join**
+The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
+**Self Join**
+A self join is a regular join, but the table is joined with itself.
+
+# ORDER BY
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+# GROUP BY
+The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+# HAVING
+The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+
+# AGGREGATE FUNCTIONS
+The ********SUM()******** function returns the total sum of a numeric column.
+The **AVG()** function returns the average value of a numeric column
+The **COUNT()** function returns the number of rows that matches a specified criterion.
+The **MIN()** function returns the smallest value of the selected column.
+The **MAX()** function returns the largest value of the selected column.
